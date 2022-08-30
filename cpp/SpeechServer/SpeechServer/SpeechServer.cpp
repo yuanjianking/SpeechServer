@@ -28,7 +28,7 @@ int main()
 {
 	cout << "Hello CMake." << endl;
     StartServer();
-    return 0;
+	return 0;
 }
 
 #if !defined(_MSC_VER)/*&&  !defined(__APPLE__)  &&  && !defined(__CYGWIN__)*/
