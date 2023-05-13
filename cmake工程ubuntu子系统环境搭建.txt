@@ -1,0 +1,17 @@
+powershell
+  wsl --install
+  wsl --install -d ubuntu
+
+appstore
+ 安装终端
+
+ubuntu
+     sudo apt update
+     sudo apt install cmake
+     sudo apt install -y ninja-build
+     sudo apt install g++
+     sudo apt install gdb
+
+vs2022
+  选择本地计算机可以发布到本地
+  选择wls:ubuntu可以发布到linux子系统
