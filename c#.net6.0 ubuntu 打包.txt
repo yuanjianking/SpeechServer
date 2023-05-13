@@ -1,0 +1,18 @@
+执行dotnet-install.sh安装.net sdk
+https://docs.microsoft.com/en-us/dotnet/core/install/linux-scripted-manual#scripted-install
+
+并修改文件访问权限 sudo chomd 777 “dotnet-install.sh”
+./dotnet-install.sh -c Current
+./dotnet-install.sh -c Current --runtime aspnetcore
+
+查看echo $PATH
+没有的话，手动将dotnet安装目录添加到PATH
+ sudo vi /etc/profile
+ export PATH=$PATH:/home/ubuntu/.dotnet
+
+
+发布
+先创建发布
+在配置文件设置里面将部署改成独立 目标运行时改成linux-x64
+发布成功的文件夹上传到linux系统，并修改文件访问权限 sudo chomd 777 “*”
+执行sudo ./SpeechServer
